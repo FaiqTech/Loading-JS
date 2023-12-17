@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.loader {
+    border: 16px solid #f3f3f3; 
+    border-top: 16px solid #3498db; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 1s linear infinite;//burda deyirikki keyfranesde qeyd elediyimiz
+                                       //funksiyani burada emel ele ve infinity -sonsuz  emel ele demekdir
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }//burada deyirki 0% da 0 deg olsun
+    100% { transform: rotate(360deg); }//100% de 100 deg olsun
+}
